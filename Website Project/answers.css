@@ -1,0 +1,157 @@
+.parent-answers{
+    display: flex;
+    justify-content: space-between;
+}
+.answers-box{
+    background-color: rgb(252, 248, 240);
+    height: auto;
+    width: 870px;
+    padding: 5px;
+    border-top: 5px solid rgb(196, 226, 164);
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    position: relative;
+}
+.answers-title{
+    display: flex;
+    align-items: center;
+}
+.answers-title h2{
+    color: #3c7101;;
+    margin-left: 13px;
+    opacity: 1;
+    cursor: pointer;
+}
+.answers-title h2:hover{
+    opacity: 0.8;
+    transition: opaciy 0.15s;
+}
+.questions-container{
+    background-color: white;
+    display: flex;
+    border-radius: 3px;
+    opacity: 1;
+    width: 95%;
+    margin-bottom: 10px;
+    padding: 8px 12px;
+    cursor: pointer;
+    opacity: 1;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    box-shadow: 0.1px 0.1px 3px rgba(0,0,0,0.2);
+}
+.questions-container:hover{
+    background-color: #4a7c12;
+}
+.questions-container:hover .question-content,
+.questions-container:hover .question-date {
+    color: white;
+}
+.save-icon{
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+   
+}
+.save-icon img{
+    height: 27px;
+    width: 27px;
+
+}
+.question-content{
+    font-family: Noto Sans, sans-serif;
+    color: #303030;
+    font-size: 16px;
+    font-weight: 600;
+    max-width: 80%;
+    overflow-wrap: break-word;
+    transition: color 0.2s ease;
+}
+.question-date{
+    font-family: Nunito, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #b5b5b5;
+    margin-left: auto;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    transition: color 0.2s ease;
+}
+.more-option{
+    position:absolute;
+    right: 30px;
+    bottom: 0;
+    color: #407200;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    opacity: 1;
+    cursor: pointer;
+}
+.greendots{
+    height: 35px;
+    width: 35px;
+    margin-left: 5px;
+}
+.more-option:hover{
+    transition: opacity 0.15s;
+    opacity: 0.8;
+}
+
+
+.selected-questions-box{
+    background-color: rgb(236, 242, 227);
+    height: 900px;
+    width: 400px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.questions-title p{
+    color: #3c7101;;
+    opacity: 1;
+    cursor: pointer;
+    font-size: 20.5px;
+    font-family: Noto Sans, sans-serif;
+    font-weight: 600;
+    align-items: center;
+    display:flex;
+}
+.questions-title p:hover{
+    opacity: 0.8;
+    transition: opaciy 0.15s;
+}
+.selected-questions-box .questions-container{
+    width: 85%;
+}
+
+/* Default styling remains the same */
+
+@media (max-width: 768px) {
+    .parent-answers {
+        flex-direction: column;
+        align-items: center;
+    }
+    .answers-box, .selected-questions-box {
+        width: auto; /* Make it adapt to smaller screens */
+        margin-bottom: 20px;
+    }
+    .questions-container {
+        width: 100%; /* Adjust to take full width within container */
+    }
+}
+
+/* Further adjustments for extra small screens */
+@media (max-width: 480px) {
+    .answers-box, .selected-questions-box {
+        width: 100%; /* Full width for mobile */
+    }
+    .question-content {
+        font-size: 14px; /* Reduce font size for smaller screens */
+    }
+    .question-date, .more-option {
+        font-size: 12px; /* Reduce font size if needed */
+    }
+}

@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    font-family: Noto Sans, sans-serif;
+    height: 3000px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+.zad-container {
+    margin-top: 150px; 
+    margin-bottom: 25px;
+    text-align: center; 
+    display: block; 
+    width: fit-content; 
+    opacity: 1;
+    margin-left: auto; 
+    margin-right: auto; 
+    cursor: pointer;
+}
+.zad-container:hover {
+    border-color: bisque;
+    opacity: 0.6;
+    transition: opacity 0.15s;
+}

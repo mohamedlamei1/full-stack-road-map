@@ -1,0 +1,94 @@
+.topics-box{
+    margin-top: 50px;
+}
+.topics-title{
+    background-color: rgb(252, 248, 240);
+    border-top: 5px solid rgb(196, 226, 164);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+
+}
+.topics-title p{
+    margin-left: 14px;
+    color: #3c7101;;
+    font-size: 21px;
+    font-weight: 600;
+}
+.topics-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.topics-green-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24.3%;
+    height: 170px;
+    background-color: rgb(196, 226, 164);
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    transition: transform 0.3s ease; 
+
+}
+.topics-green-container p{
+    color: #325E00;
+    font-size: 24px;
+    font-weight: 550;
+}
+.topics-orange-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24.3%;
+    height: 170px;
+    background-color: #F6AB59;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    transition: transform 0.3s ease; 
+
+}
+.topics-orange-container p{
+    color: #853800;
+    font-size: 24px;
+    font-weight: 550;
+}
+.topics-green-container:hover,
+.topics-orange-container:hover {
+    transform: scale(1.05); 
+}
+/* General styling remains the same */
+
+@media (max-width: 768px) {
+    .topics-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .topics-green-container, .topics-orange-container {
+        width: 90%; /* Reduce width for tablets */
+        margin-bottom: 15px; /* Add space between stacked containers */
+    }
+}
+
+@media (max-width: 480px) {
+    .topics-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .topics-green-container, .topics-orange-container {
+        width: 100%; /* Full width for mobile */
+        margin-bottom: 10px;
+    }
+    .topics-green-container p, .topics-orange-container p {
+        font-size: 20px; /* Adjust font size for readability on smaller screens */
+    }
+}

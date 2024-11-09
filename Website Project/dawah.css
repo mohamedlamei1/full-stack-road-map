@@ -1,0 +1,54 @@
+.dawah-box{
+    margin-top: 130px;
+    background-color: rgb(236, 242, 227);
+    width: 100%;
+    height: auto;
+    padding-bottom: 30px;
+    position: relative;
+    border-top: 3.5px solid rgb(75, 124, 18);
+    margin-bottom: 100px;
+
+}
+.dawah-title{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    background-color: rgb(236, 242, 227);
+    padding: 10px 70px;
+    border: 1.5px solid rgb(75, 124, 18);
+    border-bottom: none;
+    border-radius: 3px;
+}
+.dawah-title p{
+    color: #3C7101;
+    font-size: 17px;
+    font-weight: 600;
+}
+.dawah-containers-body{
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    height: auto;
+}
+.dawah-containers-body .questions-container{
+    width: calc(33.333% - 10px); /* Ensures three per row with spacing */
+    box-sizing: border-box; /* Helps maintain consistent sizing with padding */
+    align-items: start;
+}
+
+.dawah-containers-body .questions-container .save-icon{
+    margin-top: 16px;
+}
+
+@media (max-width: 768px) {
+    .dawah-box{
+        flex-direction: column;
+        align-items: center;
+    }
+    .dawah-containers-body .questions-container {
+        width: 90%;
+        margin-bottom: 15px;
+    }
+}
